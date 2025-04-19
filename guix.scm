@@ -6,7 +6,7 @@
              (gnu packages guile)
              (guix licenses))
 
-(let [(tag "0.1.2")]
+(let [(tag "0.1.3")]
   (package
     (name "guile-slugify")
     (version tag)
@@ -17,7 +17,7 @@
                     (commit version)))
               (file-name (git-file-name name version))
               (sha256
-               (base32 "05llq8xzdxnxxi1l2hwz1niq1lxnzxnpaw376kzq0aaqbp13zz32"))
+               (base32 "1xg6dhcnd6m5z9d7yzsa2vzdhzgifyk92gkfb6md8rbc8dilp2rh"))
               (snippet '(begin
                           (for-each delete-file '("guix.scm" "test.scm" "LICENSE" "README.md"))))))
 
